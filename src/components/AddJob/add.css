@@ -1,0 +1,54 @@
+
+.job-card{
+    background-color:white;
+    width:50%;
+    min-height:150px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.add-input{
+    margin:10px;
+    /* padding:10px 40px; */
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:8px;
+    padding-right:40%;
+    border-radius:4px;
+    border:1px solid lightblue;
+    background-color:ghostwhite;
+}
+select{
+    margin:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:8px;
+    padding-right:40%;
+    border-radius:4px;
+    border:1px solid lightblue;
+    background-color:ghostwhite;
+    
+}
+h2{
+    padding:15px;
+}
+.add-btn{
+    margin: 15px;
+
+}
+.info-btn{
+    background-color:#2d2ddf;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    margin-top:10px;
+    cursor: pointer;
+    /* margin-left: 10px; */
+}
+.info{
+    margin-left:10px;
+}

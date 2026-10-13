@@ -1,0 +1,129 @@
+.home-bg-container{
+    box-sizing:border-box;
+    background-color:#f5f7fb;
+    min-height:100vh;
+    width:100%;
+    padding:40px clamp(16px, 4vw, 40px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-bg-container *,
+.home-bg-container *::before,
+.home-bg-container *::after{
+    box-sizing:border-box;
+}
+
+/* Navbar */
+.nav-bar{
+    display:block;
+    margin:0 0 40px;
+    text-align:center;
+}
+
+.nav-bar h1{
+    margin:0;
+    color:#1f2937;
+    font-size:32px;
+    line-height:1.2;
+}
+
+/* Cards layout */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:24px;
+    width:100%;
+    margin-bottom:32px;
+}
+
+/* Card design */
+.cards{
+    /* background:white; */
+    width:100%;
+    min-width:0;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    border:1px #555 solid;
+    /* box-shadow:0 5px 15px rgba(0,0,0,0.1); */
+}
+
+.cards h3{
+    margin:0 0 10px;
+    color:#555;
+    line-height:1.35;
+    overflow-wrap:break-word;
+    text-wrap:balance;
+}
+
+.cards p{
+    margin:0;
+    font-size:32px;
+    /* font-weight:bold; */
+}
+
+/* Buttons container */
+.btn-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+    width:100%;
+    margin-top:0;
+}
+
+/* Button style */
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    min-height:48px;
+    background:#4f46e5;
+    color:white;
+    padding:12px 22px;
+    border:0;
+    border-radius:6px;
+    text-decoration:none;
+    font:inherit;
+    font-weight:500;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.logout-btn{
+    font-family:inherit;
+}
+
+.btn:hover{
+    background:#3730a3;
+}
+
+@media (max-width: 700px){
+    .nav-bar{
+        gap:20px;
+        margin-bottom:36px;
+    }
+
+    .nav-bar h1{
+        font-size:27px;
+    }
+
+    .card-container{
+        grid-template-columns:1fr;
+        gap:16px;
+        margin-bottom:24px;
+    }
+}
+
+@media (max-width: 420px){
+    .btn-container{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+}
